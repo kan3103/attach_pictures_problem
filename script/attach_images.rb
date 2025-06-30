@@ -14,8 +14,8 @@ require 'benchmark'
 
 post = Post.first_or_create!(title: "Test", content: "Test")
 
-dummy_path = Rails.root.join('tmp', 'dummy.png')
-dummy_path2 = Rails.root.join('tmp', 'dummy2.png')
+dummy_path = Rails.root.join('test/fixtures/files', 'dummy.png')
+dummy_path2 = Rails.root.join('test/fixtures/files', 'dummy2.png')
 
 (1..50).each_slice(10) do |batch|
   time = Benchmark.realtime do
