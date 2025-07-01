@@ -28,7 +28,7 @@ def attach_in_batches(dummy_path, num: 2, total: 1000, batch_size: 200)
     puts "Sum of all batches: #{times.round(2)}s"
 end
 
-def two_instance_attach_fast(dummy_path, num: 2, total: 1000)
+def attach_insert_all(dummy_path, num: 2, total: 1000)
     times = 0
     1..num.times do |n|
         post = Post.create!(title: "Fast attach #{n + 1}", content: "Attaching images without reload")
@@ -61,4 +61,4 @@ end
 
 before_attach
 attach_in_batches(dummy_path)
-two_instance_attach_fast(dummy_path)
+attach_insert_all(dummy_path)
