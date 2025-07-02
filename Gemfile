@@ -12,6 +12,7 @@ gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 gem 'importmap-rails'
+gem 'mysql2'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -27,6 +28,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 gem 'concurrent-ruby', '1.3.4'
 gem 'slim-rails'
+gem 'aws-sdk-s3'
+gem 'chunky_png'
+gem 'rubyzip'
+gem 'rails-patterns'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -37,6 +42,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'annotate'
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
