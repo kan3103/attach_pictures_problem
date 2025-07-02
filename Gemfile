@@ -29,6 +29,9 @@ gem 'image_processing', '~> 1.2'
 gem 'concurrent-ruby', '1.3.4'
 gem 'slim-rails'
 gem 'aws-sdk-s3'
+gem 'chunky_png'
+gem 'rubyzip'
+gem 'rails-patterns'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
