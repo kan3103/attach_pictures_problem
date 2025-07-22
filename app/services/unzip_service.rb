@@ -24,5 +24,4 @@ class UnzipService < Patterns::Service
     end
     self
    end
-   
 end
