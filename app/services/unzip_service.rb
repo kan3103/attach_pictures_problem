@@ -10,11 +10,8 @@ class UnzipService < Patterns::Service
   end
 
   def call
-    zip_path = Rails.root.join('tmp', @uploaded_file.original_filename)
-    File.open(zip_path, 'wb') do |file|
-      file.write(@uploaded_file.read)
-    end
-
+    zip_path = @uploaded_file
+    
     @extracted_folder = Rails.root.join('tmp', 'unzipped')
     FileUtils.mkdir_p(@extracted_folder)
 
